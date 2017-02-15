@@ -49,11 +49,11 @@ function start() {
     {
       if (l.charAt(result[i].length-2)=='.' || l.charAt(result[i].length-2)==',' || l.charAt(result[i].length-2)=='?' || l.charAt(result[i].length-2)=='!'
       || l.charAt(result[i].length-2)==';' || l.charAt(result[i].length-2)==':') {
-        result[i] = result[i].slice(0,result[i].length-1);
-        frm[j]=result[i];
+        l = result[i].slice(0,result[i].length-1);
+        frm[j]=l;
       }
       j++;
-      frm[j]=result[i];
+      frm[j]=l;
     }
   }
   var tmp;
