@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SpeedReader</title>
+	<meta charset="utf-8" />
+	<link  rel="stylesheet" type="text/css" href="speedreader.css" />
+	<script src="speedreader.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="title">
+	<h1><STRONG>SpeedReader</STRONG></h1>
+  </div>
+	<div id="output">
+		<div id="out"></div>
+	</div>
+	<div id="options">
+	<div id="p" class="op">
+			<fieldset id="play">
+				<label><Strong>Play Controls:</Strong></label> <br />
+				<button id='start' type="button" name="start" value="Start">Start</button>
+				<button id='stop' type="button" name="stop" value="Stop" disabled=true >Stop</button>
+			</fieldset>
+		</div>
+		<div id="spd" class="op">
+			<fieldset id="speed">
+				<label><Strong>Speed:</Strong></label> <br />
+				<select name="spd" id="ss">
+				<option value="500" >50 wpm</option>
+				<option value="200" >300 wpm</option>
+				<option value="171" selected="selected">350 wpm</option>
+				<option value="150" >400 wpm</option>
+				<option value="133" >450 wpm</option>
+				<option value="120" >500 wpm</option>
+				</select>
+			</fieldset>
+		</div>
+		<div id="sz" class="op">
+			<fieldset id="size">
+				<label><Strong>Size:</Strong></label> <br />
+				<input id='medium' type="radio" name="size" value="medium" checked=true>Medium </button>
+				<input id='big' type="radio" name="size" value="big">Big </input>
+				<input id='bigger' type="radio" name="size" value="bigger">Bigger </input>
+			</fieldset>
+		</div>
+
+	<div id="input">
+		<fieldset id="in">
+			<label><strong>Input Text:</strong></label><br />
+			<textarea id="text" rows="10" cols="80" value=""></textarea>
+		</fieldset>
+	</div>
+</div>
+<div id="val">
+<a href="https://webster.cs.washington.edu/validate-html.php"><img src="https://webster.cs.washington.edu/images/w3c-html-blue.png"></img></a>
+<a href="https://webster.cs.washington.edu/validate-css.php"><img src="https://webster.cs.washington.edu/images/w3c-css-blue.png"></img></a>
+<a href="https://webster.cs.washington.edu/jslint/?referer"><img src="https://webster.cs.washington.edu/images/w3c-js-blue.png"></img></a>
+</div>
+	</body>
+
+</body>
+</html>

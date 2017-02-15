@@ -1,0 +1,90 @@
+html,body {
+  font: Garamond,serif;
+  font-size: 12pt;
+  background-color: #EAF6F6;
+  text-align: center;
+}
+
+#output {
+  clear:both;
+  width:80%;
+  height:100px;
+  font-size:36pt;
+  font-weight: bold;
+  font-family:monospace;
+  line-height: 100px;
+  border: 2px solid #8EBEBE;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  position:relative;
+  text-align: center;
+  margin:auto;
+}
+#out {
+  position:absolute;
+  text-align: center;
+  width:100%;
+}
+
+#play {
+  width:25%;
+}
+#speed {
+  width:25%;
+}
+#size {
+  width:25%;
+}
+#title {
+  text-align: center;
+}
+#options {
+text-align: center;
+}
+label {
+    font-weight: bold;
+    border-bottom: 1px solid #8EBEBE;
+    float:left;
+    margin: 2px;
+    width:100%;
+    text-align: left;
+}
+.op {
+  display: inline;
+  width: 100%;
+}
+fieldset {
+  display: inline-block;
+  text-align: left;
+  border: 0px;
+  vertical-align: top;
+}
+button {
+    border: 1px solid gray;
+  width: 70px;
+  background-color: white;
+}
+:disabled {
+  background-color: lightgray;
+  border: 1px solid gray;
+width: 70px;
+}
+select {
+  width:60%;
+}
+input {
+
+}
+#text {
+  border: 1px solid gray;
+  background-color: #FFFFFF;
+}
+img {
+  width:70px;
+}
+#val {
+  text-align: left;
+  position:fixed;
+  bottom:5px;
+  left:5px;
+}
