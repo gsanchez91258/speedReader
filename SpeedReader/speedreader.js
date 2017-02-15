@@ -38,7 +38,24 @@ function start() {
   var text = document.getElementById('text').value;
   result = text.split(/[ \t\n]+/);
   var punc = [];
-  var frm = result;
+  var frm = [];
+  var i=0; var j=-1;
+  for (i=0;i<result.length;i++)
+  {
+    j++;
+    var l=result[i];
+    frm[j]=l;
+    if ((l.endsWith(',')||l.endsWith('.')||l.endsWith('?')||l.endsWith('!')||l.endsWith(';')||l.endsWith(':')))
+    {
+      if (l.charAt(result[i].length-2)=='.' || l.charAt(result[i].length-2)==',' || l.charAt(result[i].length-2)=='?' || l.charAt(result[i].length-2)=='!'
+      || l.charAt(result[i].length-2)==';' || l.charAt(result[i].length-2)==':') {
+        result[i] = result[i].slice(0,result[i].length-1);
+        frm[j]=result[i];
+      }
+      j++;
+      frm[j]=result[i];
+    }
+  }
   var tmp;
   var i=0;
   var j=0;
@@ -53,11 +70,7 @@ function start() {
       counter=0;
     }
     out.innerHTML=frm[counter];
-        var l=frm[counter];
-    if ((l.endsWith(',')||l.endsWith('.')||l.endsWith('?')||l.endsWith('!')||l.endsWith(';')||l.endsWith(':')))
-    {
-      clearInterval(id);
-    }
+        l=frm[counter];
     s = sp.options[sp.selectedIndex].value;
     clearInterval(id);
     id= setInterval(myFunction, s);
